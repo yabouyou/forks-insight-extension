@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 600px;  
+    height: 800px;  
+    overflow: auto;
+    background-color: rgba(255,255,255,255);
+}
+
+#fetch-current {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#fetch-current:hover {
+    background-color: #45a049;
+}
+
+#forks {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#forks th, #forks td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#forks tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+#forks th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#fork-table {
+    display: none;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 20px;
+}
+
+button {
+    margin: 0 10px 20px 0;  
+    padding-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#sort-label {
+    float: right;
+    margin-top: 10px;
+}
+
+td {
+    white-space: pre-wrap;
+    overflow: auto; 
+    max-width: 100px;
+}
+
+#loader {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  #forks th:nth-child(2) {
+    width: 200px;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: space-between; /* to spread the search bar and button across the container */
+    align-items: center; /* to vertically align the button and the search bar */
+}
+
+#searchSection{
+    width: 100%;
+    height: 300px;
+}
+
+#searchBar{
+    width: 80%;
+    height: 40px;
+    box-sizing: border-box; /* to ensure padding and border are included in the element's total width and height */
+    margin-right: 2%; /* slight margin to give space between the button and the search bar */
+    margin-left: 20px;
+}
+
+#searchButton{
+    margin-top: 20px;
+    width: 18%; /* adjusted width to fill the space */
+    height: 40px; /* matching height of the search bar */
+    box-sizing: border-box; /* ensures padding and border are included in the element's total width and height */
+}

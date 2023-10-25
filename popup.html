@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="loader" style="display: none;">
+      <img src="loader.gif" alt="Loading..." />
+    </div>
+    <div class="table-container">
+    <div id="fork-table">
+      <div id="sort-label">
+        <label for="sortOptions">Sort By: </label>
+        <select id="sortOptions">
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+          <option value="stargazers" selected>Most Stars</option>
+        </select>
+      </div>
+      
+      <table id="forks">
+        <tr>
+          <th id="sortName">Name</th>
+          <th id="sortCommitSummary">AI Summary</th>
+          <th id="sortDateCreated">Date Created</th>
+          <th id="sortLastCommit">Last Commit</th>
+          <th id="sortStars">Stars</th>
+          <th id="sortAheadBy">Ahead by</th>
+          <th id="sortBehind"> Behind by</th>
+        </tr>
+      </table>
+      <div id="button-container">
+        <button id="prev-page">Previous</button>
+        <button id="next-page">Next</button>
+      </div>
+    </div>
+    </div>
+    
+    <div id="searchSection" style="display: none;">
+      <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Ask about forks on this repository..." />
+        <button id="searchButton">Enter</button>
+      </div>
+      <div id="searchResults"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
